@@ -21,18 +21,23 @@ export default defineUserConfig({
   bundler: webpackBundler(),
 
   theme: plumeTheme({
+    
     changelog: {
       maxCount: 10,
       repoUrl: 'https://github.com/for9464/for9464.github.io',
       commitUrlPattern: ':repo/commit/:hash',
-      issueUrlPattern: ':repo/issues/:issue',
-      tagUrlPattern: ':repo/releases/tag/:tag'
     },
     // 添加您的部署域名
     hostname: 'for9464.github.io',
 
     plugins: {
-      git: process.env.NODE_ENV === 'production',
+      search: {
+        // more options
+      },
+      docsearch: {
+        // more options
+      },
+      git: true,
       /**
        * Shiki 代码高亮
        * @see https://theme-plume.vuejs.press/config/plugins/code-highlight/

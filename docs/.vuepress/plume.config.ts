@@ -11,11 +11,33 @@ export default defineThemeConfig({
   docsRepo: 'https://github.com/for9464/for9464.github.io',
   docsBranch: 'main',
   docsDir: 'docs',
-
   appearance: true,
 
   social: [
     { icon: 'github', link: 'https://github.com/only9464' },
+    { icon: 'xbox', link: 'https://github.com/only9464' },
+    { icon: 'stackoverflow', link: 'https://github.com/only9464' },
+    { icon: 'steam', link: 'https://github.com/only9464' },
+    { icon: 'douban', link: 'https://github.com/only9464' },
+    { icon: 'zhihu', link: 'https://github.com/only9464' },
+    { icon: 'juejin', link: 'https://github.com/only9464' },
+    { icon: 'docker', link: 'https://github.com/only9464' },
+    { icon: 'gitlab', link: 'https://github.com/only9464' },
+    { icon: 'bilibili', link: 'https://github.com/only9464' },
+    { icon: 'weibo', link: 'https://github.com/only9464' },
+    { icon: 'qq', link: 'https://github.com/only9464' },
+    { icon: 'youtube', link: 'https://github.com/only9464' },
+    { icon: 'x', link: 'https://github.com/only9464' },
+    { icon: 'twitter', link: 'https://github.com/only9464' },
+    { icon: 'slack', link: 'https://github.com/only9464' },
+    { icon: 'npm', link: 'https://github.com/only9464' },
+    { icon: 'mastodon', link: 'https://github.com/only9464' },
+    { icon: 'linkedin', link: 'https://github.com/only9464' },
+    { icon: 'instagram', link: 'https://github.com/only9464' },
+    { icon: 'facebook', link: 'https://github.com/only9464' },
+    { icon: 'discord', link: 'https://github.com/only9464' },
+// 'discord' | 'facebook' | 'github' | 'instagram' | 'linkedin' | 'mastodon' | 'npm' | 
+// 'slack' | 'twitter' | 'x' | 'youtube' | 'qq' | 'weibo' | 'bilibili' | 'gitlab' | 'docker' | 'juejin' | 'zhihu' | 'douban' | 'steam' | 'stackoverflow' | 'xbox';
   ],
 
   locales: {
