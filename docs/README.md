@@ -7,7 +7,7 @@ config:
     full: true
     background: tint-plate
     hero:
-      name: Theme Plume
+      name: only9464
       tagline: VuePress Next Theme
       text: 一个简约的，功能丰富的 vuepress 文档&博客 主题
       actions:
@@ -15,6 +15,7 @@ config:
           theme: brand
           text: 博客
           link: /blog/
+          target: _blank
         -
           theme: alt
           text: Github →

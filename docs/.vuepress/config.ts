@@ -5,6 +5,7 @@ import { plumeTheme } from 'vuepress-theme-plume'
 export default defineUserConfig({
   base: '/',
   lang: 'zh-CN',
+  head: [['link', { rel: 'icon', href: 'https://q1.qlogo.cn/g?b=qq&nk=2099311682&s=100' }]],
   locales: {
     '/': {
       title: 'only9464',
@@ -21,16 +22,27 @@ export default defineUserConfig({
   bundler: webpackBundler(),
 
   theme: plumeTheme({
-    
+    contributors: {
+      mode: 'block',
+    },
     changelog: {
       maxCount: 10,
       repoUrl: 'https://github.com/for9464/for9464.github.io',
       commitUrlPattern: ':repo/commit/:hash',
     },
     // 添加您的部署域名
-    hostname: 'for9464.github.io',
+    hostname: 'blog.mioe.me',
 
     plugins: {
+      comment: {
+        provider: 'Giscus', // "Artalk“ | "Giscus" | "Twikoo" | "Waline"
+        comment: true,
+        repo: 'for9464/for9464.github.io', 
+        repoId: 'R_kgDONQozUQ', 
+        category: 'Announcements', 
+        categoryId: 'DIC_kwDONQozUc4CkWLV', 
+        reactionsEnabled: true,
+      },
       search: {
         // more options
       },
