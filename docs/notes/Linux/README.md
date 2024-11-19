@@ -1,8 +1,13 @@
 ---
-title: Demo
+title: Linux的笔记
 createTime: 2024/11/17 20:28:35
 permalink: /Linux/
 ---
 
-- [bar](./bar.md)
-- [foo](./foo.md)
+## 前言
+
+入门计算机两载有余，时而好学，时而懈怠，未曾系统学习过Linux，也未曾整理过学到的东西，近日空闲，遂整理之。
+
+## 学习资源
+
+## 学习计划

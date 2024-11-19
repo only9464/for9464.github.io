@@ -10,18 +10,21 @@ export default defineUserConfig({
     '/': {
       title: 'only9464',
       lang: 'zh-CN',
-      description: '',
+      description: '个人博客',
     },
     '/en/': {
       title: 'only9464',
       lang: 'en-US',
-      description: '',
+      description: 'Blog',
     },
   },
 
   bundler: webpackBundler(),
 
   theme: plumeTheme({
+    autoFrontmatter: {
+      permalink: true,
+    },
     contributors: {
       mode: 'block',
     },
@@ -46,9 +49,11 @@ export default defineUserConfig({
       search: {
         // more options
       },
-      docsearch: {
-        // more options
-      },
+      // docsearch: {
+      //   appId: 'A6UGX9AWB0', 
+      //   apiKey: '71ce6a82856077df8447af8a145021da', 
+      //   indexName: 'for9464io', 
+      // },
       git: true,
       /**
        * Shiki 代码高亮
@@ -56,7 +61,7 @@ export default defineUserConfig({
        */
       shiki: {
            // 强烈建议预设代码块高亮语言，插件默认加载所有语言会产生不必要的时间开销
-        languages: ['shell', 'bash', 'typescript', 'javascript'],
+        languages: ['shell', 'bash', 'typescript', 'javascript','powershell','html','css'],
       },
 
       /**

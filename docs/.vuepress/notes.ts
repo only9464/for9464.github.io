@@ -12,10 +12,20 @@ const zhLinuxNote = defineNoteConfig({
   link: '/Linux',
   sidebar: 'auto',
 })
+const zhGolangNote = defineNoteConfig({
+  dir: 'Golang',
+  link: '/Golang',
+  sidebar: 'auto',
+})
+const zhKotlinNote = defineNoteConfig({
+  dir: 'Kotlin',
+  link: '/Kotlin',
+  sidebar: 'auto',
+})
 export const zhNotes = defineNotesConfig({
   dir: 'notes',
   link: '/',
-  notes: [zhAndroidNote, zhLinuxNote],
+  notes: [zhAndroidNote, zhLinuxNote, zhGolangNote, zhKotlinNote],
 })
 
 /* =================== locale: en-US ======================= */
