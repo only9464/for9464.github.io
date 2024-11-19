@@ -32,6 +32,8 @@ export default defineUserConfig({
       maxCount: 10,
       repoUrl: 'https://github.com/for9464/for9464.github.io',
       commitUrlPattern: ':repo/commit/:hash',
+      issueUrlPattern: ':repo/issues/:issue',
+      tagUrlPattern: ':repo/releases/tag/:tag'
     },
     // 添加您的部署域名
     hostname: 'blog.mioe.me',
@@ -49,11 +51,6 @@ export default defineUserConfig({
       search: {
         // more options
       },
-      // docsearch: {
-      //   appId: 'A6UGX9AWB0', 
-      //   apiKey: '71ce6a82856077df8447af8a145021da', 
-      //   indexName: 'for9464io', 
-      // },
       git: true,
       /**
        * Shiki 代码高亮
@@ -72,7 +69,7 @@ export default defineUserConfig({
         gfm: true,
         vPre: true,
         breaks: true,
-        linkify: true,
+        linkify: false,
         align: true,
         attrs: true,
         sup: true,
@@ -101,6 +98,7 @@ export default defineUserConfig({
        * @see https://theme-plume.vuejs.press/config/plugin/markdown-power/
        */
       markdownPower: {
+        fileTree: true, // :::file-tree  文件树容器
         pdf: true,
         caniuse: true,
         plot: true,

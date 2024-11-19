@@ -22,10 +22,15 @@ const zhKotlinNote = defineNoteConfig({
   link: '/Kotlin',
   sidebar: 'auto',
 })
+const zhCryptoNote = defineNoteConfig({
+  dir: 'Crypto',
+  link: '/Crypto',
+  sidebar: 'auto',
+})
 export const zhNotes = defineNotesConfig({
   dir: 'notes',
   link: '/',
-  notes: [zhAndroidNote, zhLinuxNote, zhGolangNote, zhKotlinNote],
+  notes: [zhAndroidNote, zhLinuxNote, zhGolangNote, zhKotlinNote, zhCryptoNote],
 })
 
 /* =================== locale: en-US ======================= */
