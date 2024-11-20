@@ -5,182 +5,145 @@ permalink: /Android/war8zt7n/
 ---
 
 
-## 文件结构 
+## 一、文件结构 
 
-::: file-tree icon="colored" 
-- docs
-  - .vuepress
-    - config.ts
-  - page1.md
-  - README.md
-<!-- 
-│  .gitignore
-│  build.gradle.kts
-│  gradle.properties
-│  gradlew
-│  gradlew.bat
-│  local.properties
-│  settings.gradle.kts
-│  
-├─.gradle
-│  │  config.properties
-│  │  file-system.probe
-│  │  
-│  ├─8.7
-│  │  │  gc.properties
-│  │  │  
-│  │  ├─checksums
-│  │  │      checksums.lock
-│  │  │      md5-checksums.bin
-│  │  │      sha1-checksums.bin
-│  │  │      
-│  │  ├─dependencies-accessors
-│  │  │  │  gc.properties
-│  │  │  │  
-│  │  │  └─e5d0c485ed9081f602aa0c935b664eb63f940590
-│  │  │      │  metadata.bin
-│  │  │      │  
-│  │  │      ├─classes
-│  │  │      │  └─org
-│  │  │      │      └─gradle
-│  │  │      │          └─accessors
-│  │  │      │              └─dm
-│  │  │      │                      LibrariesForLibs$AndroidPluginAccessors.class
-│  │  │      │                      LibrariesForLibs$AndroidxCoreLibraryAccessors.class
-│  │  │      │                      LibrariesForLibs$AndroidxEspressoLibraryAccessors.class
-│  │  │      │                      LibrariesForLibs$AndroidxLibraryAccessors.class
-│  │  │      │                      LibrariesForLibs$BundleAccessors.class
-│  │  │      │                      LibrariesForLibs$JetbrainsKotlinPluginAccessors.class
-│  │  │      │                      LibrariesForLibs$JetbrainsPluginAccessors.class
-│  │  │      │                      LibrariesForLibs$PluginAccessors.class
-│  │  │      │                      LibrariesForLibs$VersionAccessors.class
-│  │  │      │                      LibrariesForLibs.class
-│  │  │      │                      LibrariesForLibsInPluginsBlock$AndroidPluginAccessors.class
-│  │  │      │                      LibrariesForLibsInPluginsBlock$AndroidxCoreLibraryAccessors.class
-│  │  │      │                      LibrariesForLibsInPluginsBlock$AndroidxEspressoLibraryAccessors.class
-│  │  │      │                      LibrariesForLibsInPluginsBlock$AndroidxLibraryAccessors.class
-│  │  │      │                      LibrariesForLibsInPluginsBlock$BundleAccessors.class
-│  │  │      │                      LibrariesForLibsInPluginsBlock$JetbrainsKotlinPluginAccessors.class
-│  │  │      │                      LibrariesForLibsInPluginsBlock$JetbrainsPluginAccessors.class
-│  │  │      │                      LibrariesForLibsInPluginsBlock$PluginAccessors.class
-│  │  │      │                      LibrariesForLibsInPluginsBlock$VersionAccessors.class
-│  │  │      │                      LibrariesForLibsInPluginsBlock.class
-│  │  │      │                      
-│  │  │      └─sources
-│  │  │          └─org
-│  │  │              └─gradle
-│  │  │                  └─accessors
-│  │  │                      └─dm
-│  │  │                              LibrariesForLibs.java
-│  │  │                              LibrariesForLibsInPluginsBlock.java
-│  │  │                              
-│  │  ├─executionHistory
-│  │  │      executionHistory.lock
-│  │  │      
-│  │  ├─expanded
-│  │  ├─fileChanges
-│  │  │      last-build.bin
-│  │  │      
-│  │  ├─fileHashes
-│  │  │      fileHashes.bin
-│  │  │      fileHashes.lock
-│  │  │      resourceHashesCache.bin
-│  │  │      
-│  │  └─vcsMetadata
-│  ├─buildOutputCleanup
-│  │      buildOutputCleanup.lock
-│  │      cache.properties
-│  │      
-│  ├─kotlin
-│  │  └─errors
-│  └─vcs-1
-│          gc.properties
-│          
-├─.idea
-│      .gitignore
-│      .name
-│      compiler.xml
-│      gradle.xml
-│      kotlinc.xml
-│      migrations.xml
-│      misc.xml
-│      other.xml
-│      workspace.xml
-│      
-├─app
-│  │  .gitignore
-│  │  build.gradle.kts
-│  │  proguard-rules.pro
-│  │  
-│  └─src
-│      ├─androidTest
-│      │  └─java
-│      │      └─only
-│      │          └─fuck
-│      │              └─android
-│      │                      ExampleInstrumentedTest.kt
-│      │                      
-│      ├─main
-│      │  │  AndroidManifest.xml
-│      │  │  
-│      │  ├─java
-│      │  │  └─only
-│      │  │      └─fuck
-│      │  │          └─android
-│      │  └─res
-│      │      ├─drawable
-│      │      │      ic_launcher_background.xml
-│      │      │      ic_launcher_foreground.xml
-│      │      │      
-│      │      ├─mipmap-anydpi
-│      │      │      ic_launcher.xml
-│      │      │      ic_launcher_round.xml
-│      │      │      
-│      │      ├─mipmap-hdpi
-│      │      │      ic_launcher.webp
-│      │      │      ic_launcher_round.webp
-│      │      │      
-│      │      ├─mipmap-mdpi
-│      │      │      ic_launcher.webp
-│      │      │      ic_launcher_round.webp
-│      │      │      
-│      │      ├─mipmap-xhdpi
-│      │      │      ic_launcher.webp
-│      │      │      ic_launcher_round.webp
-│      │      │      
-│      │      ├─mipmap-xxhdpi
-│      │      │      ic_launcher.webp
-│      │      │      ic_launcher_round.webp
-│      │      │      
-│      │      ├─mipmap-xxxhdpi
-│      │      │      ic_launcher.webp
-│      │      │      ic_launcher_round.webp
-│      │      │      
-│      │      ├─values
-│      │      │      colors.xml
-│      │      │      strings.xml
-│      │      │      themes.xml
-│      │      │      
-│      │      ├─values-night
-│      │      │      themes.xml
-│      │      │      
-│      │      └─xml
-│      │              backup_rules.xml
-│      │              data_extraction_rules.xml
-│      │              
-│      └─test
-│          └─java
-│              └─only
-│                  └─fuck
-│                      └─android
-│                              ExampleUnitTest.kt
-│                              
-└─gradle
-    │  libs.versions.toml
-    │  
-    └─wrapper
-            gradle-wrapper.jar
-            gradle-wrapper.properties
-             -->
-
+::: file-tree icon="colored"
+  - .idea
+    - .gitignore
+    - .name
+    - compiler.xml
+    - gradle.xml
+    - kotlinc.xml
+    - migrations.xml
+    - misc.xml
+    - other.xml
+    - workspace.xml
+  - gradle
+    - libs.versions.toml
+    - wrapper
+      - gradle-wrapper.jar
+      - gradle-wrapper.properties
+  - .gradle
+    - config.properties
+    - file-system.probe
+    - 8.7
+      - gc.properties
+      - checksums
+        - checksums.lock
+        - md5-checksums.bin
+        - sha1-checksums.bin
+      - dependencies-accessors
+        - gc.properties
+        - e5d0c485ed9081f602aa0c935b664eb63f940590
+          - metadata.bin
+          - classes
+            - org
+              - gradle
+                - accessors
+                  - dm
+                    - LibrariesForLibs$AndroidPluginAccessors.class
+                    - LibrariesForLibs$AndroidxCoreLibraryAccessors.class
+                    - LibrariesForLibs$AndroidxEspressoLibraryAccessors.class
+                    - LibrariesForLibs$AndroidxLibraryAccessors.class
+                    - LibrariesForLibs$BundleAccessors.class
+                    - LibrariesForLibs$JetbrainsKotlinPluginAccessors.class
+                    - LibrariesForLibs$JetbrainsPluginAccessors.class
+                    - LibrariesForLibs$PluginAccessors.class
+                    - LibrariesForLibs$VersionAccessors.class
+                    - LibrariesForLibs.class
+                    - LibrariesForLibsInPluginsBlock$AndroidPluginAccessors.class
+                    - LibrariesForLibsInPluginsBlock$AndroidxCoreLibraryAccessors.class
+                    - LibrariesForLibsInPluginsBlock$AndroidxEspressoLibraryAccessors.class
+                    - LibrariesForLibsInPluginsBlock$AndroidxLibraryAccessors.class
+                    - LibrariesForLibsInPluginsBlock$BundleAccessors.class
+                    - LibrariesForLibsInPluginsBlock$JetbrainsKotlinPluginAccessors.class
+                    - LibrariesForLibsInPluginsBlock$JetbrainsPluginAccessors.class
+                    - LibrariesForLibsInPluginsBlock$PluginAccessors.class
+                    - LibrariesForLibsInPluginsBlock$VersionAccessors.class
+                    - LibrariesForLibsInPluginsBlock.class
+          - sources
+            - org
+              - gradle
+                - accessors
+                  - dm
+                    - LibrariesForLibs.java
+                    - LibrariesForLibsInPluginsBlock.java
+      - executionHistory
+        - executionHistory.lock
+      - expanded
+      - fileChanges
+        - last-build.bin
+      - fileHashes
+        - fileHashes.bin
+        - fileHashes.lock
+        - resourceHashesCache.bin
+      - vcsMetadata
+    - buildOutputCleanup
+      - buildOutputCleanup.lock
+      - cache.properties
+    - kotlin
+      - errors
+    - vcs-1
+      - gc.properties
+  - app
+    - .gitignore
+    - build.gradle.kts
+    - proguard-rules.pro
+    - src
+      - androidTest
+        - java
+          - only
+            - fuck
+              - android
+                - ExampleInstrumentedTest.kt
+      - main
+        - AndroidManifest.xml
+        - java
+          - only
+            - fuck
+              - android
+        - res
+          - drawable
+            - ic_launcher_background.xml
+            - ic_launcher_foreground.xml
+          - mipmap-anydpi
+            - ic_launcher.xml
+            - ic_launcher_round.xml
+          - mipmap-hdpi
+            - ic_launcher.webp
+            - ic_launcher_round.webp
+          - mipmap-mdpi
+            - ic_launcher.webp
+            - ic_launcher_round.webp
+          - mipmap-xhdpi
+            - ic_launcher.webp
+            - ic_launcher_round.webp
+          - mipmap-xxhdpi
+            - ic_launcher.webp
+            - ic_launcher_round.webp
+          - mipmap-xxxhdpi
+            - ic_launcher.webp
+            - ic_launcher_round.webp
+          - values
+            - colors.xml
+            - strings.xml
+            - themes.xml
+          - values-night
+            - themes.xml
+          - xml
+            - backup_rules.xml
+            - data_extraction_rules.xml
+      - test
+        - java
+          - only
+            - fuck
+              - android
+                - ExampleUnitTest.kt
+  - .gitignore
+  - build.gradle.kts
+  - gradle.properties
+  - gradlew
+  - gradlew.bat
+  - local.properties
+  - settings.gradle.kts
 :::
