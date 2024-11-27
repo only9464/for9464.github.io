@@ -1,7 +1,7 @@
 import { webpackBundler } from '@vuepress/bundler-webpack'
 import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
-
+import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 export default defineUserConfig({
   base: '/',
   lang: 'zh-CN',
@@ -20,7 +20,11 @@ export default defineUserConfig({
   },
 
   bundler: webpackBundler(),
-
+  plugins: [
+    googleAnalyticsPlugin({
+      id: 'G-J6Q515VK68',
+    }),
+  ],
   theme: plumeTheme({
     autoFrontmatter: {
       permalink: true,
