@@ -9,6 +9,8 @@ tags:
 ---
 ## 一、下载并安装VMware
 
+详见[【Windows】VMware安装教程](./VMware.md)
+
 ## 二、下载Ubuntu镜像
 可以从[Ubuntu官方下载界面](https://ubuntu.com/download/desktop)下载，也可以从[清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/)等镜像站下载。此处以清华源为例。
 
